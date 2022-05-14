@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+
+$buttonColor: rgb(255, 123, 0);
+$textColor: white;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  width: 300px;
+  height: 500px;
+  margin: 0px auto;
+  margin-top: 100px;
+  font-family: "Squada One", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  padding: 30px;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: -4px 4px 5px 2px rgba(0, 0, 0, 0.35);
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: $buttonColor;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-family: "Squada One", sans-serif;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.5em;
+  grid-column: 1 / 5;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+}
+
+.dot:hover {
+  background-color: $textColor;
+  color: $buttonColor;
+}
+
+.clear:hover {
+  background-color: $textColor;
+  color: $buttonColor;
+}
+
+.number:hover {
+  background-color: $textColor;
+  color: $buttonColor;
+}
+
+.operand:hover {
+  background-color: $textColor;
+  color: $buttonColor;
+}
+
+.equals {
+  grid-column: 4;
+}
+
+.total {
+  background-color: $textColor;
+  color: black;
+  grid-column: 2 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  max-width: 100%;
+  border-radius: 0;
+  cursor: auto;
+}
+
+.text {
+  font-size: 25px;
+  background-color: black;
+  cursor: auto;
+}

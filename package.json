@@ -1,0 +1,11 @@
+{
+  "name": "calcuator-challenge",
+  "version": "1.0.0",
+  "description": "calculator challenge",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tamzin Boyd",
+  "license": "ISC"
+}
